@@ -45,15 +45,14 @@ h1{
 }
 
 .erreur{
-    font:10pt arial;
     color:#DD0000;
     background-color:#EEEEEE;
     padding:10px;
     border-radius:10px;
     margin-bottom:10px;
  }
+ 
  .rappel{
-    font:10pt arial;
     color:#888888;
     background-color:#EEEEEE;
     padding:10px;

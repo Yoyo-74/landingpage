@@ -1,13 +1,13 @@
 <?php 
-$message = ""; 
-$nom     = ""; 
-$prenom  = "";
-$adresse = "";
-$cp      = "";
-$ville   = "";
-$email   = "";
-$tel     = "";
-
+@$nom     = $_POST['nom'];
+@$prenom  = $_POST['prenom'];
+@$adresse = $_POST['adresse'];
+@$cp      = $_POST['cp'];
+@$ville   = $_POST['ville'];
+@$email   = $_POST['email'];
+@$tel     = $_POST['tel'];
+@$comment = $_POST['comment'];
+@$message = $_POST['message'];
 ?>
 
 
@@ -48,7 +48,11 @@ $tel     = "";
                 <div class="col-4"></div>
                 <div class="col-3"></div>
                 <div class="col-4">
-                <?php echo $message ?>
+<!-- Essai de créer une <div> en récupérant le message d'erreur php... -->
+                <?php 
+                @$message=$_GET['message'];
+                echo $message; 
+                ?>
                     <form action="./contact.php" method="POST">
                         <div id="newcontact">
                             <fieldset>
@@ -69,7 +73,7 @@ $tel     = "";
                                 <input type="tel" name="tel" id="tel"><br>
                                 <Label for="comment">Laissez-nous un commentaire...</Label>
                                 <br>
-                                <textarea name="comment" id="comment" cols="60" rows="5" maxlength="300" size="60"
+                                <textarea name="comment" id="comment" cols="50" rows="5" maxlength="250" size="50"
                                     placeholder="En quelques mots..."></textarea>
                             </fieldset>
 
