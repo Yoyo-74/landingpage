@@ -1,0 +1,65 @@
+#hero{
+	background: url(../image/un\ humanoïde.png) center center/cover no-repeat;
+	position: relative;	
+	color: #FFF;
+    height: 1800px;
+}
+
+div{
+    padding: 0;
+}
+
+main{
+    align-items: center;
+}
+
+img{
+    padding: 20px;
+    width: 60%;
+}
+
+.zoom{
+	transition: all 0.7s ease;
+}
+
+.zoom:hover{
+	transform: scale(1.4) rotate(-10deg);
+}
+
+p{
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+#newcontact{
+    border: thick double #FFF;
+}
+
+legend{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+}
+
+.erreur{
+    font:10pt arial;
+    color:#DD0000;
+    background-color:#EEEEEE;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+ }
+ .rappel{
+    font:10pt arial;
+    color:#888888;
+    background-color:#EEEEEE;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+ }
+
+
+
